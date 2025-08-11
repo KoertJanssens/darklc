@@ -15,6 +15,8 @@ try:
         'database': st.secrets["mysql"]["database"]
     }
 
+    st.write(db_config['host'])
+
     # Connect to MySQL
     conn = mysql.connector.connect(**db_config)
     st.write("✅ Successfully connected!")
