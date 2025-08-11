@@ -1,19 +1,8 @@
-# 🎈 Blank app template
+# Dark Alignment Loot Council Dashboards
 
-A simple Streamlit app template for you to modify!
+A **Streamlit-powered dashboard** for managing and visualizing loot council decisions, player performance, and raid alignment in a clean, data-driven way — with a hint of mysterious flair.  
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
-
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## ✨ Features
+- 📊 **Interactive dashboards** for loot distribution and raid participation.
+- 🗂 **Data from MySQL** for live updates from your guild database.
+- 🔍 **Filter & sort** to quickly find specific players or items. (TODO)
