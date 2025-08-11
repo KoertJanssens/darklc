@@ -6,9 +6,20 @@ st.title("MySQL Data in Streamlit")
 
 try:
     st.write("🔄 Connecting to MySQL database...")
-    # MySQL connection details
+    
+    # Get host and port from secrets
+    host_port = st.secrets["mysql"]["host"]
+    
+    if ':' in host_port:
+        host, port_str = host_port.split(':')
+        port = int(port_str)
+    else:
+        host = host_port
+        port = 3306  # default MySQL port
+
     db_config = {
-        'host': st.secrets["mysql"]["host"],
+        'host': host,
+        'port': port,
         'user': st.secrets["mysql"]["user"],
         'password': st.secrets["mysql"]["password"],
         'database': st.secrets["mysql"]["database"]
