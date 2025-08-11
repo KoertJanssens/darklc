@@ -15,8 +15,8 @@ try:
         'database': st.secrets["mysql"]["database"]
     }
 
-    st.write(db_config['host'])
-    st.write(db_config['port'])
+    st.write('host == ',db_config['host'])
+    st.write('port == ',db_config['port'])
 
     import requests
     ip = requests.get('https://api.ipify.org').text
