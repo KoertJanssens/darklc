@@ -16,6 +16,7 @@ try:
     }
 
     st.write(db_config['host'])
+    st.write(db_config['port'])
 
     import requests
     ip = requests.get('https://api.ipify.org').text
