@@ -17,6 +17,10 @@ try:
 
     st.write(db_config['host'])
 
+    import requests
+    ip = requests.get('https://api.ipify.org').text
+    st.write(f"My public IP is {ip}")
+
     # Connect to MySQL
     conn = mysql.connector.connect(**db_config)
     st.write("✅ Successfully connected!")
